@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Console</title>
+</head>
+<body>
+    <nav class="navbar">
+        <!-- Hamburger Icon (Checkbox) -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    
+        <!-- Logo -->
+        <div class="mainlogo">
+            <img src="logo.png" alt="Logo">
+        </div>
+    
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li>
+                <a href="#">Games</a>
+                <ul class="dropdown">
+                    <li><a href="trending.html">Trending</a></li>
+                    <li><a href="ongoing.html">On Going</a></li>
+                    <li><a href="upcoming.html">Upcoming</a></li>
+                </ul>
+            </li>
+            <li><a href="console.html">Gaming Peripherals</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+    
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input class="searchtext" placeholder="Search..." aria-label="Search" />
+            <button class="searchbutton">Search</button>
+        </div>
+    </nav>
+
+    <div class="faq-page">
+      <header class="faq-header">
+          <h1>Queries And FAQ</h1>
+      </header>
+      <main class="faq-content">
+          <section class="faq-section">
+              <h2 class="faq-title">Frequently Asked Questions</h2>
+              <div class="faq-item">
+                  <p><a href="#" class="faq-link">What is your return policy?</a></p>
+                  <p class="faq-description">We accept returns within 30 days of purchase with a valid receipt.</p>
+              </div>
+              <div class="faq-item">
+                  <p><a href="#" class="faq-link">Do you offer international shipping?</a></p>
+                  <p class="faq-description">Yes, we ship internationally. Shipping fees vary by region.</p>
+              </div>
+              <div class="faq-item">
+                  <p><a href="#" class="faq-link">How can I track my order?</a></p>
+                  <p class="faq-description">Once your order ships, we will send you a tracking link via email.</p>
+              </div>
+          </section>
+          <section class="faq-form-section">
+              <h2 class="form-title">Ask Us a Question</h2>
+              <form class="faq-form" action="#" method="post">
+                  <label for="faq-name" class="form-label">Name:</label>
+                  <input type="text" id="faq-name" name="name" class="form-input" required>
+
+                  <label for="faq-email" class="form-label">Email:</label>
+                  <input type="email" id="faq-email" name="email" class="form-input" required>
+
+                  <label for="faq-question" class="form-label">Your Question:</label>
+                  <textarea id="faq-question" name="question" rows="5" class="form-textarea" required></textarea>
+
+                  <button type="submit" class="form-submit-button">Submit</button>
+              </form>
+          </section>
+      </main>
+  </div>
+      
+
+      <footer class="footer">
+        <div class="footer-section">
+            <div class="logo">
+                <img src="logo.png" alt="logo">
+            </div>
+            <div class="details">
+                <input type="text" placeholder="Email" aria-label="Enter your phone number">
+                <input type="email" placeholder="Password" aria-label="Enter your email address">
+                <button class="links3">Login</button>
+            </div>
+        </div>
+        <div class="footer-section">
+            <div class="links">
+                <button>Legal And Privacy</button>
+                <button>Terms And Conditions</button>
+                <button>Shipping Policy</button>
+                <button>Privacy Policy</button>
+            </div>
+            <div class="links1">
+                <button>Need Help</button>
+                <button>My Account</button>
+            </div>
+        </div>
+        <div class="footer-section">
+            <div class="contact">Contact Us</div>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-snapchat"></a>
+        </div>
+    </footer>
+
+
+</body>

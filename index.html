@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="icon" href="log
+">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Gaming Page</title>
+</head>
+<body>
+    <nav class="navbar">
+        <!-- Hamburger Menu for Mobile -->
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation" aria-expanded="false">
+            &#9776;
+        </button>
+    
+        <!-- Logo -->
+        <div class="mainlogo">
+            <img src="logo.png" alt="Your Brand Logo">
+        </div>
+    
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li>
+                <a href="#" aria-haspopup="true" aria-expanded="false">Games</a>
+                <ul class="dropdown">
+                    <li><a href="trending.html">Trending</a></li>
+                    <li><a href="ongoing.html">On Going</a></li>
+                    <li><a href="upcoming.html">Upcoming</a></li>
+                </ul>
+            </li>
+            <li><a href="console.html">Gaming Peripherals</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+    
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input class="searchtext" placeholder="Search..." aria-label="Search" />
+            <button class="searchbutton">Search</button>
+        </div>
+    </nav>
+    
+    <!-- Placeholder for styling and JS -->
+    <style>
+    /* Example for responsive navigation */
+    .nav-links, .search-bar {
+        display: flex; /* Adjust this as per your layout needs */
+    }
+    /* Dropdown styling */
+    .dropdown {
+        display: none;
+        position: absolute;
+        list-style: none;
+    }
+    
+    .nav-links li:hover .dropdown {
+        display: block; /* Shows dropdown on hover */
+    }
+    </style>
+    
+    <script>
+        // Toggles the navigation menu for mobile
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            const hamburger = document.querySelector('.hamburger');
+            const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+            
+            // Toggle menu visibility
+            navLinks.classList.toggle('responsive');
+            hamburger.setAttribute('aria-expanded', !isExpanded);
+        }
+    
+        // Perform search functionality (dummy implementation)
+        function performSearch() {
+            const searchValue = document.querySelector('.search-bar input').value;
+            alert(`Searching for: ${searchValue}`);
+            // Add logic to handle search
+        }
+    </script>
+    
+    
+
+            <div class="button-container">
+                <a href="aboutus.html" class="btn-primary">See More</a>
+                <a href="trending.html" class="btn-secondary">Buy Now</a>
+
+            </div>
+            
+
+    <div class="icons">
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-user"></i>
+    </div>
+
+    <img class="img1" src="try2.jpeg" alt="Gaming image">
+    <br>
+    <br>
+
+    <div class="main" id="Home">
+        <div class="main_content">
+            <div class="main_text">
+                <p class="web_name">
+                    Welcome to FIREFORGE!
+                </p>
+                <p class="mainphara">
+                    Step into the ultimate gaming destination! At Fireforge, we bring together the best in gaming, 
+                    from the latest blockbuster titles to cutting-edge consoles and premium peripherals. 
+                    Whether you’re a casual player or a hardcore enthusiast, our store has everything you need to elevate your gaming experience.
+                    Discover thrilling games, explore top-tier gear, and stay ahead with the newest releases.
+                    <BR>
+                    </BR> 
+                    At Fireforge, Gaming Isn’t Just A Hobby IT'S A LIFESTYLE!
+                </p>
+            </div>
+
+            <br><br>
+
+            <h2 class="heading3">Customer Favorites</h2>
+
+            <div class="game-container1">
+                <div class="game-card1">
+                    <div class="image-box">
+                        <img src="games 4.jpeg" alt="Days Gone" class="game-image">
+                    </div>
+                    <div class="details-box">
+                        <h2>Days Gone</h2>
+                     <ul>
+                        <li><p><strong>Release Date:</strong> April 26, 2019</p></li>
+                        <br>
+                        <li><p><strong>Platform:</strong> PlayStation 4, Microsoft Windows</p></li>
+                        <br>
+                        <li><p><strong>Genres:</strong> Action-adventure, Shooter Video Game, Survival Horror, Nonlinear Gameplay, Adventure</p></li>
+                        <br>
+                        <li><p><strong>Price:</strong> 7500 LKR</p></li>
+                        <br>
+                        <li>
+                           <p><strong>Description:</strong> Ride and fight into a deadly, post-pandemic America. Play as Deacon St. John, a drifter and bounty hunter who rides the broken road, fighting to survive while searching for a reason to live in this open-world action-adventure game.</p>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <h2 class="heading3">Best Deals & Discounts</h2>
+
+            <div class="game-container1">
+                <div class="game-card1">
+                    <div class="image-box">
+                        <img src="games9.jpeg" alt="Days Gone" class="game-image">
+                    </div>
+                    <div class="details-box">
+                        <h2>Sonic Generations</h2>
+                        <p><li>
+                            <strong>Release Date:</strong> November 1, 2011</p>
+                        </li>
+                        <p><li>
+                            <strong>Platform:</strong> PlayStation 3, Xbox 360, Microsoft Windows, Nintendo 3DS</p>
+                        </li>
+                        <p>
+                            <li>
+                                <strong>Genres:</strong> Platformer, Action, Adventure</p>
+                            </li>
+                        <p><li>
+                            <strong>Price:</strong> 4500 LKR</p>
+                        </li>
+                            <p><li>
+                                <strong>Description:</strong> Celebrate 20 years of Sonic in this thrilling adventure that combines classic and modern gameplay. Join both Classic Sonic and Modern Sonic as they team up to restore the timeline and defeat a mysterious new enemy.</p>
+                            </li>
+                        </div>
+                        
+                    </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="heading3">Upcoming Releases</h2>
+            
+            <div class="game-container1">
+                <div class="game-card1">
+                    <div class="image-box">
+                        <img src="games3.jpeg" alt="Days Gone" class="game-image">
+                    </div>
+                    <div class="details-box">
+                        <h2>Baldur's Gate III</h2>
+                            <ul>
+                                <li><p><strong>Release Date:</strong> August 3, 2023</p></li>
+                                <br>
+                                <li><p><strong>Platform:</strong> PlayStation 5, Microsoft Windows, macOS</p></li>
+                                <br>
+                                <li><p><strong>Genres:</strong> RPG, Fantasy, Turn-Based Strategy, Adventure</p></li>
+                                <br>
+                                <li><p><strong>Price:</strong> 9500 LKR</p></li>
+                                <br>
+                                <li><p><strong>Description:</strong> Embark on an epic journey in the Forgotten Realms. Lead a group of heroes with unique abilities and decisions as you uncover dark secrets, battle powerful enemies, and shape your story in this critically acclaimed RPG.</p></li>
+                            </ul>
+                        </h2>
+                
+                    </div>
+                </div>
+            </div>
+
+        </div>   
+    </div>
+    
+    <img class="deadpool" src="Image.jpg" alt="">
+
+    <!--footer--->
+
+
+    <footer class="footer">
+        <div class="footer-section">
+            <div class="logo">
+                <img src="logo.png" alt="logo">
+            </div>
+            <div class="details">
+                <input type="text" placeholder="Email" aria-label="Enter your phone number">
+                <input type="email" placeholder="Password" aria-label="Enter your email address">
+                <button class="links3">Login</button>
+            </div>
+        </div>
+        <div class="footer-section">
+            <div class="links">
+                <button>Legal And Privacy</button>
+                <button>Terms And Conditions</button>
+                <button>Shipping Policy</button>
+                <button>Privacy Policy</button>
+            </div>
+            <div class="links1">
+                <button>Need Help</button>
+                <button>My Account</button>
+            </div>
+        </div>
+        <div class="footer-section">
+            <div class="contact">Contact Us</div>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-snapchat"></a>
+        </div>
+    </footer>
+
+</body>
