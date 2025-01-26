@@ -331,7 +331,9 @@ body {
     font-size: 18px; /* Smallest icons for very small devices */
     margin: 5px; /* Minimal icon spacing */
   }
-}/* Game Container */
+}
+
+/* Game Container */
 .game-container {
   position: relative;
   top: -200px;
