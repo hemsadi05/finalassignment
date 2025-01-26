@@ -1,63 +1,63 @@
 body {
-    max-width: 1000px;
-    margin: 0 auto;
-    font-family: 'Times New Roman', Times, serif;
-    background-color: #000;
-    color: #fff;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #000;
+  color: #fff;
 }
 
 /* Image Section */
 .img1 {
-    position: relative;
-    left: 300px;
-    top: -90px;
-    height: 100vh; /* Full viewport height */
-    background: url('your-image.jpg') no-repeat center center/cover; /* Ensures the image covers the container */
-    display: flex; /* Enables flexbox */
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
-    color: white; /* Text color */
-    text-align: center; /* Centers text inside the container */
+  position: relative;
+  left: 300px;
+  top: -90px;
+  height: 100vh; /* Full viewport height */
+  background: url('your-image.jpg') no-repeat center center/cover; /* Ensures the image covers the container */
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  color: white; /* Text color */
+  text-align: center; /* Centers text inside the container */
 }
 
 /* Media Query for screens smaller than 768px (e.g., tablets) */
 @media (max-width: 768px) {
-    .img1 {
-        left: 0; /* Reset left offset */
-        top: 0; /* Reset top offset */
-        height: auto; /* Allow height to adjust automatically */
-        background-size: contain; /* Adjust background image size for smaller screens */
-        background-repeat: no-repeat;
-    }
+  .img1 {
+      left: 0; /* Reset left offset */
+      top: 0; /* Reset top offset */
+      height: auto; /* Allow height to adjust automatically */
+      background-size: contain; /* Adjust background image size for smaller screens */
+      background-repeat: no-repeat;
+  }
 }
 
 
 /* Main Content Section */
 .main .main_content .main_text {
-    width: 600px;
-    text-align: justify;
-    line-height: 21px;
-    position: relative;
-    top: 200px;
-    left: 5%;
+  width: 600px;
+  text-align: justify;
+  line-height: 21px;
+  position: relative;
+  top: 200px;
+  left: 5%;
 }
 
 .main .main_content .main_text .web_name {
-    position: relative;
-    top: -1000px;
-    right: 270px;
-    color: #ffffff;
-    font-size: 50px;
-    font-family: 'Times New Roman', Times, serif;
-    text-shadow: 0 3px #0400ff;
+  position: relative;
+  top: -1000px;
+  right: 270px;
+  color: #ffffff;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: 0 3px #0400ff;
 }
 
 .main .main_content .main_text .mainphara {
-    position: relative;
-    top: -1000px;
-    right: 300px;
-    font-size: 23px;
-    font-family: 'Times New Roman', Times, serif;
+  position: relative;
+  top: -1000px;
+  right: 300px;
+  font-size: 23px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 
@@ -66,16 +66,16 @@ body {
 .heading1,
 .heading2,
 .heading3 {
-    color: #ff0055;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 40px;
-    text-shadow: 0 3px #0400ff;
+  color: #ff0055;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  text-shadow: 0 3px #0400ff;
 }
 
 .heading3 {
-    position: relative;
-    top: -530px;
-    left: 340px;
+  position: relative;
+  top: -530px;
+  left: 340px;
 }
 
 
@@ -90,294 +90,294 @@ body {
 
 
 .footer {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    background-color: #111;
-    border-top: 2px solid #ff0055;
-    color: #fff;
-    width: auto;
-    height: auto;
-    padding: 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: #111;
+  border-top: 2px solid #ff0055;
+  color: #fff;
+  width: auto;
+  height: auto;
+  padding: 0;
 }
 
 /* Logo and Details Section */
 .footer-section .logo img {
-    position: relative;
-    left: -350px;
-    width: 120px;
-    height: 120px;
-    background-color: #333;
-    display: flex;
+  position: relative;
+  left: -350px;
+  width: 120px;
+  height: 120px;
+  background-color: #333;
+  display: flex;
 }
 
 .footer-section .details {
-    position: relative;
-    left: -350px;
-    top: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  position: relative;
+  left: -350px;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 
 .footer-section .details input::placeholder {
-    color: #fff8f8;
+  color: #fff8f8;
 }
 
 /* Links Section */
 .footer-section .links {
-    position: absolute;
-    top: 50px;
-    left: 450px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  position: absolute;
+  top: 50px;
+  left: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .footer-section .links button {
-    width: auto;
-    padding: 12px;
-    position: relative;
-    left: -250px;
-    top: 20px;
-    background-color: #ff0055;
-    color: #ffffff;
-    font-size: 18px;
-    border-radius: 8px;
-    text-align: center;
-    transition: background-color 0.3s ease;
+  width: auto;
+  padding: 12px;
+  position: relative;
+  left: -250px;
+  top: 20px;
+  background-color: #ff0055;
+  color: #ffffff;
+  font-size: 18px;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s ease;
 }
 
 .footer-section .links button:hover {
-    background-color: #2e00e6;
+  background-color: #2e00e6;
 }
 
 .footer-section .links1 {
-    position: absolute;
-    top: 135px;
-    left: 450px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 200px;
+  position: absolute;
+  top: 135px;
+  left: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 200px;
 }
 
 
 
 .footer-section .links1 button:hover {
-    background-color: #2e00e6;
+  background-color: #2e00e6;
 }
 
 /* Contact Section */
 .footer-section .contact {
-    position: absolute;
-    top: 50px;
-    right: -300px;
-    background-color: #222;
-    padding: 50px;
-    border-radius: 20px;
-    width: 300px;
-    height: 150px;
-    color: #ff0055;
-    font-weight: bold;
-    font-size: 25px;
+  position: absolute;
+  top: 50px;
+  right: -300px;
+  background-color: #222;
+  padding: 50px;
+  border-radius: 20px;
+  width: 300px;
+  height: 150px;
+  color: #ff0055;
+  font-weight: bold;
+  font-size: 25px;
 }
 /* Style all font awesome icons */
 /* Style all font awesome icons */
 .fa {
-    padding: 20px;
-    font-size: 50px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
+  padding: 20px;
+  font-size: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
 }
-  
+
 /* Add a hover effect if you want */
 .fa:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
-  
+
 /* Set a specific color for each brand */
-  
-  /* Facebook */
+
+/* Facebook */
 .fa-facebook {
-    position: relative;
-    top: 80px;
-    left: 250px;
-    padding: 20px;
-    font-size: 30px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 80%;
-    background: #3B5998;
-    color: white;  
+  position: relative;
+  top: 80px;
+  left: 250px;
+  padding: 20px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 80%;
+  background: #3B5998;
+  color: white;  
 }
-  
+
 /* Twitter */
 .fa-twitter {
-    position: relative;
-    top: 80px;
-    left: 255px;
-    padding: 20px;
-    font-size: 30px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 80%;
-    background: #55ACEE;
-    color: white;
+  position: relative;
+  top: 80px;
+  left: 255px;
+  padding: 20px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 80%;
+  background: #55ACEE;
+  color: white;
 }
-  
+
 .fa-instagram {
-    position: relative;
-    top: 80px;
-    left: 265px;
-    padding: 20px;
-    font-size: 30px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 80%;
-    background: #ff00c3;
-    color: white;
+  position: relative;
+  top: 80px;
+  left: 265px;
+  padding: 20px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 80%;
+  background: #ff00c3;
+  color: white;
 }
-  
+
 .fa-youtube {
-    position: relative;
-    top: 80px;
-    left: 275px;
-    padding: 20px;
-    font-size: 30px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 80%;
-    background: #ff0000;
-    color: white;
+  position: relative;
+  top: 80px;
+  left: 275px;
+  padding: 20px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 80%;
+  background: #ff0000;
+  color: white;
 }
-  
+
 .fa-snapchat {
-    position: relative;
-    top: 80px;
-    left: 285px;
-    padding: 20px;
-    font-size: 30px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 80%;
-    background: #eaff00;
-    color: white;
+  position: relative;
+  top: 80px;
+  left: 285px;
+  padding: 20px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 80%;
+  background: #eaff00;
+  color: white;
 }
 
 
 /* General Footer Styles */
 .footer {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap; /* Ensures elements wrap on smaller screens */
-    justify-content: space-between;
-    align-items: flex-start;
-    background-color: #111;
-    border-top: 2px solid #ff0055;
-    color: #fff;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap; /* Ensures elements wrap on smaller screens */
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #111;
+  border-top: 2px solid #ff0055;
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 /* Logo and Details Section */
 .footer-section .logo img {
-    width: 100px;
-    height: auto;
-    background-color: #333;
-    margin-bottom: 20px;
+  width: 100px;
+  height: auto;
+  background-color: #333;
+  margin-bottom: 20px;
 }
 
 .footer-section .details {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .footer-section .details input {
-    width: 100%;
-    max-width: 400px;
-    padding: 12px;
-    border: 1px solid #444;
-    background-color: #222;
-    color: white;
-    border-radius: 8px;
-    text-align: center;
-    font-size: 16px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  border: 1px solid #444;
+  background-color: #222;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+  margin: 0 auto;
 }
 
 .footer-section .details input::placeholder {
-    color: #fff8f8;
+  color: #fff8f8;
 }
 
 /* Links Section */
 .footer-section .links,
 .footer-section .links1 {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .footer-section .links button,
 .footer-section .links1 button {
-    width: 100%;
-    max-width: 300px;
-    padding: 12px;
-    background-color: #ff0055;
-    color: #ffffff;
-    font-size: 16px;
-    border-radius: 8px;
-    text-align: center;
-    transition: background-color 0.3s ease;
-    border: none;
+  width: 100%;
+  max-width: 300px;
+  padding: 12px;
+  background-color: #ff0055;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  border: none;
 }
 
 .footer-section .links button:hover,
 .footer-section .links1 button:hover {
-    background-color: #2e00e6;
+  background-color: #2e00e6;
 }
 
 /* Contact Section */
 .footer-section .contact {
-    background-color: #222;
-    padding: 20px;
-    border-radius: 20px;
-    width: 100%;
-    max-width: 400px;
-    color: #ff0055;
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center;
-    margin: 0 auto 20px;
-    box-sizing: border-box;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  color: #ff0055;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  margin: 0 auto 20px;
+  box-sizing: border-box;
 }
 
 /* Font Awesome Icons */
 .fa {
-    margin: 10px;
-    font-size: 24px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    padding: 10px;
-    color: white;
+  margin: 10px;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  padding: 10px;
+  color: white;
 }
 
 .fa:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .fa-facebook { background: #3B5998; }
@@ -389,127 +389,127 @@ body {
 
 /* Small screens (max-width: 768px) */
 @media (max-width: 768px) {
-    .footer {
-        flex-direction: column;
-        align-items: center;
-        padding: 30px 15px;
-        text-align: center;
-    }
+  .footer {
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 15px;
+      text-align: center;
+  }
 
-    /* Logo Styling */
-    .footer-section .logo img {
-        width: 100px;
-        height: auto;
-        margin-bottom: 20px;
-    }
+  /* Logo Styling */
+  .footer-section .logo img {
+      width: 100px;
+      height: auto;
+      margin-bottom: 20px;
+  }
 
-    /* Details Section */
-    .footer-section .details {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 20px;
-    }
+  /* Details Section */
+  .footer-section .details {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+  }
 
-    .footer-section .details input {
-        width: 90%;
-        max-width: 320px;
-        padding: 12px;
-        font-size: 16px;
-        border: 1px solid #444;
-        background-color: #222;
-        color: white;
-        border-radius: 8px;
-        text-align: center;
-    }
+  .footer-section .details input {
+      width: 90%;
+      max-width: 320px;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #444;
+      background-color: #222;
+      color: white;
+      border-radius: 8px;
+      text-align: center;
+  }
 
-    /* Links Section */
-    .footer-section .links,
-    .footer-section .links1 {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: 15px;
-        align-items: center;
-        margin-bottom: 20px;
-    }
+  /* Links Section */
+  .footer-section .links,
+  .footer-section .links1 {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 15px;
+      align-items: center;
+      margin-bottom: 20px;
+  }
 
-    .footer-section .links button,
-    .footer-section .links1 button {
-        width: 90%;
-        max-width: 300px;
-        padding: 12px 20px;
-        background-color: #ff0055;
-        color: #ffffff;
-        font-size: 16px;
-        border-radius: 10px;
-        text-align: center;
-        transition: transform 0.3s ease, background-color 0.3s ease;
-        border: none;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    }
+  .footer-section .links button,
+  .footer-section .links1 button {
+      width: 90%;
+      max-width: 300px;
+      padding: 12px 20px;
+      background-color: #ff0055;
+      color: #ffffff;
+      font-size: 16px;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      border: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
 
-    .footer-section .links button:hover,
-    .footer-section .links1 button:hover {
-        background-color: #2e00e6;
-        transform: scale(1.05);
-    }
+  .footer-section .links button:hover,
+  .footer-section .links1 button:hover {
+      background-color: #2e00e6;
+      transform: scale(1.05);
+  }
 
-    /* Contact Section */
-    .footer-section .contact {
-        width: 90%;
-        max-width: 350px;
-        padding: 20px;
-        background-color: #222;
-        border-radius: 15px;
-        color: #ff0055;
-        font-weight: bold;
-        font-size: 18px;
-        text-align: center;
-        margin-bottom: 20px;
-    }
+  /* Contact Section */
+  .footer-section .contact {
+      width: 90%;
+      max-width: 350px;
+      padding: 20px;
+      background-color: #222;
+      border-radius: 15px;
+      color: #ff0055;
+      font-weight: bold;
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 20px;
+  }
 
-    /* Social Media Icons */
-    .fa {
-        margin: 8px;
-        font-size: 22px;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        display: inline-block;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 50%;
-        transition: transform 0.3s ease, opacity 0.3s ease;
-    }
+  /* Social Media Icons */
+  .fa {
+      margin: 8px;
+      font-size: 22px;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 50%;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+  }
 
-    .fa:hover {
-        transform: scale(1.1);
-        opacity: 0.8;
-    }
+  .fa:hover {
+      transform: scale(1.1);
+      opacity: 0.8;
+  }
 }
 
 /* Extra small screens (max-width: 480px) */
 @media (max-width: 480px) {
-    .footer-section .details input {
-        font-size: 14px;
-        padding: 10px;
-    }
+  .footer-section .details input {
+      font-size: 14px;
+      padding: 10px;
+  }
 
-    .footer-section .links button,
-    .footer-section .links1 button {
-        font-size: 14px;
-        padding: 10px 15px;
-    }
+  .footer-section .links button,
+  .footer-section .links1 button {
+      font-size: 14px;
+      padding: 10px 15px;
+  }
 
-    .fa {
-        font-size: 20px;
-        width: 35px;
-        height: 35px;
-        line-height: 35px;
-    }
+  .fa {
+      font-size: 20px;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+  }
 }
 
 /* Game Container */
@@ -526,108 +526,108 @@ body {
 
 
 .game-container {
-    position: relative;
-    top: -200px;
-    width: 200%;
-    max-width: 1000px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    border: #e6004f;
-    margin: 30px;
-    right: 40px;
-    margin-bottom: 100px;
+  position: relative;
+  top: -200px;
+  width: 200%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: #e6004f;
+  margin: 30px;
+  right: 40px;
+  margin-bottom: 100px;
 
 }
 
 .game-card {
-    display: flex;
-    align-items: flex-start;
-    background: #282828;
-    border-radius: 30px;
-    overflow: hidden;
-    box-shadow: 0 6px 15px #000000;
-    padding: 15px;
-    gap: 20px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+  display: flex;
+  align-items: flex-start;
+  background: #282828;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px #000000;
+  padding: 15px;
+  gap: 20px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .game-card:hover {
-    transform: translateY(-5px);
-    background-color: #000000;
-    box-shadow: 0 8px 20px #00000099;
+  transform: translateY(-5px);
+  background-color: #000000;
+  box-shadow: 0 8px 20px #00000099;
 }
 
 .image-box {
-    flex-shrink: 0;
-    overflow: hidden;
-    position: relative;
+  flex-shrink: 0;
+  overflow: hidden;
+  position: relative;
 }
 
 .game-image {
-    width: 380px;
-    height: 408px;
-    border-radius: 0px;
-    display: block;
-    transition: transform 0.3s ease, filter 0.3s ease;
+  width: 380px;
+  height: 408px;
+  border-radius: 0px;
+  display: block;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .image-box:hover .game-image {
-    transform: scale(1.1);
-    filter: brightness(1.1);
+  transform: scale(1.1);
+  filter: brightness(1.1);
 }
 
 .details-box {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    transition: opacity 0.3s ease;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: opacity 0.3s ease;
 
 }
 
 .details-box h2 {
-    margin: 0;
-    font-size: 28px;
-    color: #e6004f;
-    text-shadow: 1px 1px 1px #000000;
+  margin: 0;
+  font-size: 28px;
+  color: #e6004f;
+  text-shadow: 1px 1px 1px #000000;
 }
 
 .details-box p {
-    margin: 0;
-    font-size: 15px;
-    color: #ffffff;
+  margin: 0;
+  font-size: 15px;
+  color: #ffffff;
 }
 
 .details-box strong {
-    color: #e6004f;
+  color: #e6004f;
 
 }
 
 .description {
-    display: none;
-    margin-top: 10px;
-    font-size: 0.9rem;
-    color: #aaaaaa;
-    line-height: 1.5;
-    animation: fadeIn 0.4s ease-in-out;
-    border: #ff0055;
-    border-radius: 20px;
+  display: none;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #aaaaaa;
+  line-height: 1.5;
+  animation: fadeIn 0.4s ease-in-out;
+  border: #ff0055;
+  border-radius: 20px;
 }
 
 .game-card:hover .description {
-    display: block;
+  display: block;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
 
 
@@ -644,136 +644,133 @@ body {
 
 
 .game-container1 {
-    position: relative;
-    top: -550px;
-    width: 200%;
-    max-width: 1000px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    border: #e6004f;
-    margin: 30px;
-    right: 40px;
+  position: relative;
+  top: -550px;
+  width: 200%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: #e6004f;
+  margin: 30px;
+  right: 40px;
 
 }
 
 .game-card1 {
-    display: flex;
-    align-items: flex-start;
-    background: #282828;
-    border-radius: 30px;
-    border: #e6004f;
-    overflow: hidden;
-    box-shadow: 0 6px 15px #00000080;
-    padding: 15px;
-    gap: 20px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+  display: flex;
+  align-items: flex-start;
+  background: #282828;
+  border-radius: 30px;
+  border: #e6004f;
+  overflow: hidden;
+  box-shadow: 0 6px 15px #00000080;
+  padding: 15px;
+  gap: 20px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .game-card1:hover {
-    transform: translateY(-5px);
-    background-color: #000000;
-    box-shadow: 0 8px 20px #00000099;
+  transform: translateY(-5px);
+  background-color: #000000;
+  box-shadow: 0 8px 20px #00000099;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    background-color: #000000;
-    
+  transform: translateY(-5px);
+  background-color: #000000;
+  
 }
 
 /* For mobile screens (max-width: 480px) */
 @media (max-width: 480px) {
-    .main .main_content .main_text {
-        width: 100%; /* Full width for mobile */
-        top: 20px; /* Adjust positioning */
-        left: 0;
-    }
+  .main .main_content .main_text {
+      width: 100%; /* Full width for mobile */
+      top: 20px; /* Adjust positioning */
+      left: 0;
+  }
 
-    .main .main_content .main_text .web_name {
-        font-size: 20px; /* Further reduce font size */
-        top: -200px;
-    }
+  .main .main_content .main_text .web_name {
+      font-size: 20px; /* Further reduce font size */
+      top: -200px;
+  }
 
-    .main .main_content .main_text .mainphara {
-        font-size: 14px; /* Further reduce paragraph size */
-        top: -200px;
-        
-    }
+  .main .main_content .main_text .mainphara {
+      font-size: 14px; /* Further reduce paragraph size */
+      top: -200px;
+      
+  }
 
-    .footer {
-        padding: 10px;
-        flex-direction: column; /* Stack footer sections vertically */
-    }
+  .footer {
+      padding: 10px;
+      flex-direction: column; /* Stack footer sections vertically */
+  }
 
-    .footer-section .details input {
-        width: 100%; /* Full width */
-        margin: 0 auto;
-    }
+  .footer-section .details input {
+      width: 100%; /* Full width */
+      margin: 0 auto;
+  }
 
-    .footer-section .contact {
-        font-size: 14px; /* Reduce font size */
-        padding: 10px;
-        width: 100%; /* Full width */
-        text-align: center;
-    }
+  .footer-section .contact {
+      font-size: 14px; /* Reduce font size */
+      padding: 10px;
+      width: 100%; /* Full width */
+      text-align: center;
+  }
 
-    .game-container,
-    .game-container1 {
-        width: 100%; /* Ensure container fits screen */
-        margin: 10px 0;
-    }
+  .game-container,
+  .game-container1 {
+      width: 100%; /* Ensure container fits screen */
+      margin: 10px 0;
+  }
 
-    .game-card,
-    .game-card1 {
-        padding: 8px;
-        gap: 10px; /* Reduce gaps */
-    }
+  .game-card,
+  .game-card1 {
+      padding: 8px;
+      gap: 10px; /* Reduce gaps */
+  }
 
-    .details-box h2 {
-        font-size: 16px; /* Smaller font size for titles */
-    }
+  .details-box h2 {
+      font-size: 16px; /* Smaller font size for titles */
+  }
 
-    .details-box p {
-        font-size: 12px; /* Adjust paragraph text size */
-    }
+  .details-box p {
+      font-size: 12px; /* Adjust paragraph text size */
+  }
 }
 
 /* For large screens (min-width: 1200px) */
 @media (min-width: 1200px) {
-    .footer {
-        padding: 40px;
-    }
+  .footer {
+      padding: 40px;
+  }
 
-    .footer-section .contact {
-        width: 400px;
-        font-size: 20px;
-    }
+  .footer-section .contact {
+      width: 400px;
+      font-size: 20px;
+  }
 
-    .game-container,
-    .game-container1 {
-        max-width: 1200px;
-        margin: 50px auto;
-    }
+  .game-container,
+  .game-container1 {
+      max-width: 1200px;
+      margin: 50px auto;
+  }
 
-    .game-card,
-    .game-card1 {
-        flex-direction: row; /* Ensure horizontal layout for large screens */
-        padding: 20px;
-    }
+  .game-card,
+  .game-card1 {
+      flex-direction: row; /* Ensure horizontal layout for large screens */
+      padding: 20px;
+  }
 
-    .details-box h2 {
-        font-size: 32px; /* Larger titles */
-    }
+  .details-box h2 {
+      font-size: 32px; /* Larger titles */
+  }
 
-    .details-box p {
-        font-size: 18px; /* Larger text */
-    }
+  .details-box p {
+      font-size: 18px; /* Larger text */
+  }
 
-    .description {
-        font-size: 16px; /* Larger descriptions */
-    }
+  .description {
+      font-size: 16px; /* Larger descriptions */
+  }
 }
-
-
-

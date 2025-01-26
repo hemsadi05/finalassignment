@@ -12,14 +12,17 @@
 </head>
 <body>
     <nav class="navbar">
-        <!-- Hamburger Menu for Mobile -->
-        <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation" aria-expanded="false">
-            &#9776;
-        </button>
+        <!-- Hamburger Icon (Checkbox) -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
     
         <!-- Logo -->
         <div class="mainlogo">
-            <img src="logo.png" alt="Your Brand Logo">
+            <img src="logo.png" alt="Logo">
         </div>
     
         <!-- Navigation Links -->
@@ -27,7 +30,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="aboutus.html">About Us</a></li>
             <li>
-                <a href="#" aria-haspopup="true" aria-expanded="false">Games</a>
+                <a href="#">Games</a>
                 <ul class="dropdown">
                     <li><a href="trending.html">Trending</a></li>
                     <li><a href="ongoing.html">On Going</a></li>
@@ -44,53 +47,6 @@
             <button class="searchbutton">Search</button>
         </div>
     </nav>
-    
-    <!-- Placeholder for styling and JS -->
-    <style>
-    /* Example for responsive navigation */
-    .nav-links, .search-bar {
-        display: flex; /* Adjust this as per your layout needs */
-    }
-    /* Dropdown styling */
-    .dropdown {
-        display: none;
-        position: absolute;
-        list-style: none;
-    }
-    
-    .nav-links li:hover .dropdown {
-        display: block; /* Shows dropdown on hover */
-    }
-    </style>
-    
-    <script>
-        // Toggles the navigation menu for mobile
-        function toggleMenu() {
-            const navLinks = document.querySelector('.nav-links');
-            const hamburger = document.querySelector('.hamburger');
-            const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
-            
-            // Toggle menu visibility
-            navLinks.classList.toggle('responsive');
-            hamburger.setAttribute('aria-expanded', !isExpanded);
-        }
-    
-        // Perform search functionality (dummy implementation)
-        function performSearch() {
-            const searchValue = document.querySelector('.search-bar input').value;
-            alert(`Searching for: ${searchValue}`);
-            // Add logic to handle search
-        }
-    </script>
-    
-    
-
-            <div class="button-container">
-                <a href="aboutus.html" class="btn-primary">See More</a>
-                <a href="trending.html" class="btn-secondary">Buy Now</a>
-
-            </div>
-            
 
     <div class="icons">
         <i class="fa-solid fa-heart"></i>
@@ -117,6 +73,11 @@
                     </BR> 
                     At Fireforge, Gaming Isn’t Just A Hobby IT'S A LIFESTYLE!
                 </p>
+            </div>
+            <div class="button-container">
+                <a href="aboutus.html" class="btn-primary">See More</a>
+                <a href="trending.html" class="btn-secondary">Buy Now</a>
+
             </div>
 
             <br><br>
@@ -210,41 +171,40 @@
     </div>
     
     <img class="deadpool" src="Image.jpg" alt="">
-
-    <!--footer--->
-
-
-    <footer class="footer">
-        <div class="footer-section">
-            <div class="logo">
-                <img src="logo.png" alt="logo">
-            </div>
-            <div class="details">
-                <input type="text" placeholder="Email" aria-label="Enter your phone number">
-                <input type="email" placeholder="Password" aria-label="Enter your email address">
-                <button class="links3">Login</button>
-            </div>
-        </div>
-        <div class="footer-section">
-            <div class="links">
-                <button>Legal And Privacy</button>
-                <button>Terms And Conditions</button>
-                <button>Shipping Policy</button>
-                <button>Privacy Policy</button>
-            </div>
-            <div class="links1">
-                <button>Need Help</button>
-                <button>My Account</button>
-            </div>
-        </div>
-        <div class="footer-section">
-            <div class="contact">Contact Us</div>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-youtube"></a>
-            <a href="#" class="fa fa-snapchat"></a>
-        </div>
-    </footer>
-
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-section">
+      <div class="logo">
+        <img src="logo.png" alt="logo">
+      </div>
+      <div class="details">
+        <input type="text" placeholder="Email" aria-label="Enter your phone number">
+        <input type="email" placeholder="Password" aria-label="Enter your email address">
+        <button class="links3">Login</button>
+      </div>
+    </div>
+    <div class="footer-section">
+      <div class="links">
+        <button>Legal And Privacy</button>
+        <button>Terms And Conditions</button>
+        <button>Shipping Policy</button>
+        <button>Privacy Policy</button>
+      </div>
+      <div class="links1">
+        <button>Need Help</button>
+        <button>My Account</button>
+      </div>
+    </div>
+    <div class="footer-section">
+      <div class="contact">Contact Us</div>
+      <div class="social-icons">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-snapchat"></a>
+      </div>
+    </div>
+  </footer>
+</html>
 </body>
