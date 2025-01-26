@@ -3,7 +3,7 @@ body {
   margin: 0 auto;
   font-family: 'Times New Roman', Times, serif;
   background-color: #000;
-  color: #fff;
+  color: #000000;
 }
 
 /* Image Section */
@@ -38,7 +38,7 @@ body {
   line-height: 21px;
   position: relative;
   top: 200px;
-  left: 5%;
+  left: -100px;
 }
 
 .main .main_content .main_text .web_name {
@@ -54,7 +54,7 @@ body {
 .main .main_content .main_text .mainphara {
   position: relative;
   top: -1000px;
-  right: 300px;
+  right: 250px;
   font-size: 23px;
   font-family: 'Times New Roman', Times, serif;
 }

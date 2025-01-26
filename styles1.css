@@ -224,170 +224,39 @@
   transform: scale(1.1);
 }
 
-/* Products Section */
-.products {
-  width: 100%;
-  padding: 25px 0;
+/* General Styles */
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #000;
+  color: #fff;
+  padding: 0 20px;
 }
 
-.products h1 {
-  text-align: center;
-  font-size: 60px;
-  text-transform: uppercase;
-  background: linear-gradient(to right, #000, #ff0055);
-  -webkit-text-fill-color: transparent;
+
+
+.btn {
+  position: relative;
+  top: -10px;
+  left: -0px;
+  padding: 8px 20px;
+  background-color: #ff0055;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
 }
 
-.products .box {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-.products .card {
-  text-align: center;
-  padding: 10px;
-  border-radius: 5px;
-  background: #222;
-  box-shadow: 0 0 10px #ff0055;
-}
-
-.products .card img {
-  width: 100px;
-  margin: 15px 0;
-  transition: transform 0.3s;
-}
-
-.products .card:hover img {
+.btn:hover {
+  background-color: #ff0055;
+  color: #0400ff;
+  border: 2px solid #0400ff;
   transform: scale(1.1);
 }
 
-.products .card h2 {
-  font-size: 24px;
-  margin: 10px 0;
-}
-
-.products .card p {
-  color: #fff;
-  margin: 10px 0;
-}
-
-/* Table Styles */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-th, td {
-  border: 1px solid #fff;
-  padding: 10px;
-  text-align: center;
-  color: #fff;
-}
-
-th {
-  background-color: #ff0055;
-  font-size: 1.2rem;
-}
-
-td {
-  background-color: #1a1a1a;
-  font-size: 1rem;
-}
-
-tfoot td {
-  font-weight: bold;
-  background-color: #333;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .main .main_content .main_text {
-    width: 90%;
-    top: 150px;
-    left: 5%;
-    font-size: 16px;
-  }
-
-  .button-container {
-    top: 500px;
-    left: 50%;
-    transform: translateX(-50%);
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .products h1 {
-    font-size: 40px;
-  }
-
-  .products .box {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-
-  table {
-    font-size: 14px;
-  }
-
-  th, td {
-    padding: 8px;
-  }
-}
-
-@media (max-width: 480px) {
-  .main .main_content .main_text {
-    width: 100%;
-    top: 100px;
-    left: 0;
-    font-size: 14px;
-  }
-
-  .button-container {
-    top: 400px;
-    gap: 10px;
-  }
-
-  .btn-primary,
-  .btn-secondary {
-    font-size: 16px;
-    padding: 8px 16px;
-  }
-
-  .products h1 {
-    font-size: 30px;
-  }
-
-  .products .box {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  }
-
-  .products .card img {
-    width: 80px;
-  }
-
-  .products .card h2 {
-    font-size: 18px;
-  }
-
-  .products .card p {
-    font-size: 14px;
-  }
-
-  table {
-    font-size: 12px;
-    left: 50px;
-    top: -400px;
-  }
-
-  th, td {
-    padding: 1px;
-  }
-}
-
-/*Aboutus*/
-
+/* About Us Section */
 .top-section {
   display: flex;
   gap: 20px;
@@ -441,6 +310,13 @@ tfoot td {
   border-radius: 50%;
 }
 
+
+
+/* Table Footer (If needed) */
+tfoot td {
+font-weight: bold;
+background-color: #333333;
+}
 /* Locations Section */
 
 .locations h2 {
@@ -1343,11 +1219,11 @@ body {
     left: 10px;
 }
 
-.products .box {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* More flexible grid */
-}
 
 .branch-details table {
+  position: relative;
+  left: 50px;
+  top: -400px;
     width: 50%; /* Full width */
     font-size: 14px; /* Reduce font size */
 }
@@ -1406,14 +1282,6 @@ body {
     top: auto;
     left: auto;
     gap: 10px;
-}
-
-.products h1 {
-    font-size: 30px;
-}
-
-.products .card h2 {
-    font-size: 18px;
 }
 
 .locations h2 {
@@ -1482,12 +1350,8 @@ body {
     height: 100px; /* Larger logo */
 }
 
-.products h1 {
+.h1 {
     font-size: 80px; /* Larger font */
-}
-
-.products .card h2 {
-    font-size: 28px;
 }
 
 .branch-details table {
@@ -1513,34 +1377,241 @@ body {
 }
 
 
-@media (max-width: 480px) {
-.btn:hover {
-    background-color: #ff0055;
-    color: #0400ff;
-    border: 2px solid #0400ff;
-    transform: scale(1.05); /* Slightly reduce scale */
+/* Products Section */
+.products {
+  width: 100%;
+  padding: 25px 0;
 }
 
+.products h1 {
+  text-align: center;
+  font-size: 60px;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #000, #ff0055);
+  -webkit-text-fill-color: transparent;
+}
+
+.products .box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns in one row */
+  gap: 20px;
+  padding: 20px;
+}
+
+.products .card {
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  background: #222;
+  box-shadow: 0 0 10px #ff0055;
+}
+
+.products .card img {
+  width: 100px;
+  margin: 15px 0;
+  transition: transform 0.3s;
+}
+
+.products .card:hover img {
+  transform: scale(1.1);
+}
+
+.products .card h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.products .card p {
+  color: #fff;
+  margin: 10px 0;
+}
+
+.btn {
+  position: relative;
+  top: -10px;
+  left: -0px;
+  padding: 8px 20px;
+  background-color: #ff0055;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ff0055;
+  color: #0400ff;
+  border: 2px solid #0400ff;
+  transform: scale(1.1);
+}
+
+/* Table Section */
 table {
-    width: 100%; /* Full width */
-    margin-top: 10px; /* Adjust margin */
+  align-items: center;
+  width: 100%; /* Full width */
+  border-collapse: collapse; /* Remove space between cells */
+  margin-top: 20px;
 }
 
 th, td {
-    font-size: 0.8rem; /* Smaller font size */
-    padding: 5px; /* Reduce padding */
+  border: 1px solid #ffffff; /* White border for cells */
+  padding: 10px; /* Add some padding */
+  text-align: center; /* Center-align text */
+  color: #fff7f7; /* White text */
 }
 
 th {
-    font-size: 1rem; /* Adjust header font size */
+  background-color: #ff0055; /* Highlight header with red color */
+  font-size: 1.2rem; /* Slightly larger font */
 }
 
 td {
-    font-size: 0.8rem; /* Adjust cell font size */
+  background-color: #1a1a1a; /* Dark background for cells */
+  font-size: 1rem; /* Normal text size */
+}
+/* Products Section */
+.products {
+  width: 100%;
+  padding: 25px 0;
 }
 
-tfoot td {
-    font-size: 0.8rem; /* Adjust footer font size */
-    padding: 5px; /* Reduce padding */
+.products h1 {
+  text-align: center;
+  font-size: 60px;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #000, #ff0055);
+  -webkit-text-fill-color: transparent;
 }
+
+.products .box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns in one row */
+  gap: 20px;
+  padding: 20px;
+}
+
+.products .card {
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  background: #222;
+  box-shadow: 0 0 10px #ff0055;
+}
+
+.products .card img {
+  width: 100px;
+  margin: 15px 0;
+  transition: transform 0.3s;
+}
+
+.products .card:hover img {
+  transform: scale(1.1);
+}
+
+.products .card h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.products .card p {
+  color: #fff;
+  margin: 10px 0;
+}
+
+.btn {
+  position: relative;
+  top: -10px;
+  left: -0px;
+  padding: 8px 20px;
+  background-color: #ff0055;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ff0055;
+  color: #0400ff;
+  border: 2px solid #0400ff;
+  transform: scale(1.1);
+}
+
+/* Table Section */
+table {
+  align-items: center;
+  width: 100%; /* Full width */
+  border-collapse: collapse; /* Remove space between cells */
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ffffff; /* White border for cells */
+  padding: 10px; /* Add some padding */
+  text-align: center; /* Center-align text */
+  color: #fff7f7; /* White text */
+}
+
+th {
+  background-color: #ff0055; /* Highlight header with red color */
+  font-size: 1.2rem; /* Slightly larger font */
+}
+
+td {
+  background-color: #1a1a1a; /* Dark background for cells */
+  font-size: 1rem; /* Normal text size */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .products .box {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .products h1 {
+    font-size: 40px; /* Smaller font size for smaller tablets */
+  }
+
+  .products .box {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller tablets */
+  }
+
+  .products .card img {
+    width: 80px; /* Resize images for smaller tablets */
+  }
+
+  .products .card h2 {
+    font-size: 20px; /* Smaller font size for card titles */
+  }
+
+  .products .card p {
+    font-size: 14px; /* Smaller font size for card descriptions */
+  }
+}
+
+@media (max-width: 480px) {
+  .products h1 {
+    font-size: 30px; /* Smaller font size for mobile */
+  }
+
+  .products .box {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+    gap: 10px; /* Reduce gap between products for better spacing */
+  }
+
+  .products .card img {
+    width: 60px; /* Resize images for mobile */
+  }
+
+  .products .card h2 {
+    font-size: 18px; /* Smaller font size for card titles */
+  }
+
+  .products .card p {
+    font-size: 12px; /* Smaller font size for card descriptions */
+  }
 }
