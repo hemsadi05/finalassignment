@@ -1,0 +1,558 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #0400ff 0%, #ff0055 100%);
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    border-bottom: 3px solid #ff0055;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.order-section, .summary-section {
+    background-color: rgba(4, 0, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 0, 85, 0.3);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid #0400ff;
+}
+
+.order-section {
+    flex: 2;
+    margin-right: 2rem;
+}
+
+.summary-section {
+    flex: 1;
+}
+
+/* Parts Categories */
+.parts-category {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: rgba(4, 0, 255, 0.05);
+    border-radius: 8px;
+    border-left: 4px solid #ff0055;
+}
+
+.parts-category h3 {
+    color: #ff0055;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #0400ff;
+}
+
+.parts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.part-item {
+    border: 1px solid #0400ff;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    overflow: hidden;
+}
+
+.part-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(255, 0, 85, 0.5);
+    border-color: #ff0055;
+}
+
+.part-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #ff0055, #0400ff);
+}
+
+.part-image {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    background-color: rgba(4, 0, 255, 0.1);
+    padding: 0.5rem;
+}
+
+.part-item h4 {
+    margin: 0.5rem 0;
+    color: #ffffff;
+    font-size: 1.1rem;
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.part-price {
+    font-weight: bold;
+    color: #ff0055;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    text-shadow: 0 0 5px rgba(255, 0, 85, 0.5);
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.quantity-controls button {
+    background-color: #0400ff;
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.quantity-controls button:hover {
+    background-color: #ff0055;
+    transform: scale(1.1);
+}
+
+.quantity-controls input {
+    width: 50px;
+    text-align: center;
+    margin: 0 0.5rem;
+    padding: 0.3rem;
+    border: 1px solid #0400ff;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Order Summary */
+#order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+#order-table th, #order-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #0400ff;
+    color: #ffffff;
+}
+
+#order-table th {
+    background-color: rgba(255, 0, 85, 0.2);
+    font-weight: bold;
+    color: #ff0055;
+}
+
+#order-table tfoot td {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ff0055;
+}
+
+/* Checkout Items */
+.checkout-item img {
+    max-width: 60px;
+    max-height: 60px;
+    object-fit: contain;
+    margin-right: 15px;
+    border-radius: 4px;
+    border: 1px solid #0400ff;
+}
+
+.checkout-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(4, 0, 255, 0.3);
+}
+
+.checkout-item-details {
+    flex-grow: 1;
+}
+
+/* Buttons */
+button {
+    background-color: #0400ff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover {
+    background-color: #ff0055;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 0, 85, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#buy-now {
+    width: 100%;
+    background: linear-gradient(135deg, #ff0055 0%, #0400ff 100%);
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#buy-now:hover {
+    background: linear-gradient(135deg, #0400ff 0%, #ff0055 100%);
+}
+
+.favorites-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.favorites-buttons button {
+    flex: 1;
+    padding: 0.8rem;
+}
+
+#add-to-favorites {
+    background-color: #ff0055;
+}
+
+#add-to-favorites:hover {
+    background-color: #d9004c;
+}
+
+#apply-favorites {
+    background-color: #0400ff;
+}
+
+#apply-favorites:hover {
+    background-color: #0300d4;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background: linear-gradient(145deg, #000000 0%, #0a0066 100%);
+    margin: 5% auto;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 700px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 0 25px #ff0055;
+    border: 1px solid #0400ff;
+    animation: modalFadeIn 0.4s;
+}
+
+@keyframes modalFadeIn {
+    from {opacity: 0; transform: translateY(-50px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+.close {
+    color: #ff0055;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-shadow: 0 0 5px #000;
+}
+
+.close:hover {
+    color: #ffffff;
+    transform: rotate(90deg);
+}
+
+/* Checkout Form */
+#checkout-form {
+    margin-top: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #ff0055;
+}
+
+.form-group input, .form-group textarea, .form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #0400ff;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: all 0.3s;
+    background-color: rgba(4, 0, 255, 0.1);
+    color: #ffffff;
+}
+
+.form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+    border-color: #ff0055;
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 0, 85, 0.5);
+}
+
+#pay-button {
+    width: 100%;
+    background: linear-gradient(135deg, #ff0055 0%, #0400ff 100%);
+    margin-top: 1.5rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#pay-button:hover {
+    background: linear-gradient(135deg, #0400ff 0%, #ff0055 100%);
+}
+
+.order-review {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #0400ff;
+}
+
+.checkout-total {
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-align: right;
+    margin-top: 1rem;
+    color: #ff0055;
+}
+
+/* Thank You Modal */
+.thank-you {
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.thank-you h2 {
+    color: #ff0055;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px rgba(255, 0, 85, 0.7);
+}
+
+.thank-you p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+#return-to-shop {
+    background-color: #0400ff;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+}
+
+#return-to-shop:hover {
+    background-color: #ff0055;
+    transform: scale(1.05);
+}
+
+/* Payment Methods Styles */
+.payment-methods {
+    margin: 20px 0;
+}
+
+.payment-option {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.payment-option input[type="radio"] {
+    display: none;
+}
+
+.payment-option label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.payment-option label i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.payment-option label img {
+    height: 30px;
+}
+
+.payment-details {
+    display: none;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.payment-option input[type="radio"]:checked ~ .payment-details {
+    display: block;
+}
+
+.payment-option input[type="radio"]:checked + label {
+    font-weight: bold;
+    color: #0066cc;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .parts-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    
+    .order-section {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+    
+    .parts-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .modal-content {
+        width: 90%;
+        margin: 10% auto;
+        padding: 1.5rem;
+    }
+    
+    .thank-you {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .parts-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .favorites-buttons {
+        flex-direction: column;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Glow Effects */
+.glow {
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 5px #ff0055;
+    }
+    to { 
+        box-shadow: 0 0 20px #ff0055, 0 0 30px #0400ff;
+    }
+}
+
+/* RGB Animation */
+@keyframes rgb {
+    0% { background-color: #ff0055; }
+    33% { background-color: #0400ff; }
+    66% { background-color: #000000; }
+    100% { background-color: #ff0055; }
+}
+
+.rgb-animate {
+    animation: rgb 6s infinite;
+}
