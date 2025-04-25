@@ -209,6 +209,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ]
     };
 
+
     // Current order
     let currentOrder = {};
 
@@ -224,13 +225,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const orderTable = document.getElementById('order-items');
     const totalPriceElement = document.getElementById('total-price');
     const buyNowButton = document.getElementById('buy-now');
-    const checkoutModal = document.getElementById('checkout-modal');
     const thankYouModal = document.getElementById('thank-you-modal');
-    const closeButtons = document.querySelectorAll('.close');
-    const checkoutForm = document.getElementById('checkout-form');
-    const checkoutItemsContainer = document.getElementById('checkout-items');
-    const checkoutTotalPriceElement = document.getElementById('checkout-total-price');
-    const deliveryDateElement = document.getElementById('delivery-date');
     const returnToShopButton = document.getElementById('return-to-shop');
     const addToFavoritesButton = document.getElementById('add-to-favorites');
     const applyFavoritesButton = document.getElementById('apply-favorites');
@@ -345,56 +340,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Setup all event listeners
     function setupEventListeners() {
-        // Buy Now button
+        // Buy Now button - redirects to checkout page
         buyNowButton.addEventListener('click', () => {
             if (Object.keys(currentOrder).length === 0) {
                 alert('Please add items to your order before proceeding to checkout.');
                 return;
             }
             
-            // Update checkout items
-            updateCheckoutItems();
-            checkoutModal.style.display = 'block';
-        });
-
-        // Close modals
-        closeButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                checkoutModal.style.display = 'none';
-                thankYouModal.style.display = 'none';
-            });
-        });
-
-        // Close modals when clicking outside
-        window.addEventListener('click', (event) => {
-            if (event.target === checkoutModal) {
-                checkoutModal.style.display = 'none';
-            }
-            if (event.target === thankYouModal) {
-                thankYouModal.style.display = 'none';
-            }
-        });
-
-        // Checkout form submission
-        checkoutForm.addEventListener('submit', (e) => {
-            e.preventDefault();
+            // Save order to sessionStorage for checkout page
+            sessionStorage.setItem('checkoutOrder', JSON.stringify(currentOrder));
             
-            // Calculate delivery date (3 days from now)
-            const deliveryDate = new Date();
-            deliveryDate.setDate(deliveryDate.getDate() + 3);
-            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-            const formattedDate = deliveryDate.toLocaleDateString('en-US', options);
-            
-            deliveryDateElement.textContent = `Your items will be delivered by ${formattedDate}.`;
-            
-            checkoutModal.style.display = 'none';
-            thankYouModal.style.display = 'block';
-            
-            // Clear the order
-            currentOrder = {};
-            updateOrderSummary();
-            clearQuantityInputs();
-            saveOrderToLocalStorage();
+            // Redirect to checkout page
+            window.location.href = 'checkout.html';
         });
 
         // Return to shop button
@@ -413,7 +370,7 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Order saved as favorite!');
         });
 
-        // Apply favorites button - Fixed this function
+        // Apply favorites button
         applyFavoritesButton.addEventListener('click', () => {
             const favoriteOrder = JSON.parse(localStorage.getItem('favoriteOrder'));
             
@@ -443,35 +400,6 @@ document.addEventListener('DOMContentLoaded', function() {
             updateOrderSummary();
             saveOrderToLocalStorage();
         });
-    }
-
-    // Update checkout items in the modal
-    function updateCheckoutItems() {
-        checkoutItemsContainer.innerHTML = '';
-        let totalPrice = 0;
-
-        for (const partId in currentOrder) {
-            const item = currentOrder[partId];
-            const itemTotal = item.price * item.quantity;
-            totalPrice += itemTotal;
-            
-            const itemElement = document.createElement('div');
-            itemElement.className = 'checkout-item';
-            itemElement.innerHTML = `
-                <div class="checkout-item-image">
-                    <img src="${item.image}" alt="${item.name}">
-                </div>
-                <div class="checkout-item-details">
-                    <span class="checkout-item-name">${item.name}</span>
-                    <span class="checkout-item-quantity">${item.quantity} x $${item.price.toFixed(2)}</span>
-                </div>
-                <span class="checkout-item-total">$${itemTotal.toFixed(2)}</span>
-            `;
-            
-            checkoutItemsContainer.appendChild(itemElement);
-        }
-
-        checkoutTotalPriceElement.textContent = `$${totalPrice.toFixed(2)}`;
     }
 
     // Clear all quantity inputs
